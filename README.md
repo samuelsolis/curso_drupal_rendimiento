@@ -1,4 +1,4 @@
-# Docker-based Drupal stack
+# Drupal stack sobre Docker
 
 Este repositorio está basado en [Docker4Drupal](https://github.com/wodby/docker4drupal) y elaborado expresamente
 para el curso de Rendimiento en Drupal de Udemy, elaborado por Samuel Solís.
