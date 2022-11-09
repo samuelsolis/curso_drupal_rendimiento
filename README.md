@@ -37,3 +37,15 @@ Versiones de Drupal óptimas para el curso: 9 / 8
 ## Documentation
 
 Toda la documentación sobre este docker-compose y su uso está en https://wodby.com/docs/stacks/drupal/local.
+
+## Cómo instalar Drupal utilizando este repositorio.
+1. Duplica el fichero .env.example y renómbralo como .env
+2. Este será tu fichero de configuración, podrás cambiarlo a tu antojo.
+3. Instala Docker ([Linux](https://docs.docker.com/engine/installation), [Docker for Mac](https://docs.docker.com/engine/installation/mac) or [Docker for Windows (10+ Pro)](https://docs.docker.com/engine/installation/windows))
+4. Para linux, adicionalmente instala [Docker Compose](https://docs.docker.com/compose/install)
+5. Ejecuta el comando `docker-compose up -d` 
+6. Accede al contenedor php para instalar drupal con el comando `docker-compose exec php bash`
+7. Una vez dentro, ejecuta el comando `composer install` que obtendrá los ficheros de Drupal.
+8. Puedes salir del contenedor escribiendo `exit`
+9. Añade a tu fichero de hosts la linea `127.0.0.1 drupal.docker.localhost`. Cambia el dominio si lo has cambiado en el ".env". Este paso puede no ser necesario, algunos navegadores como Chrome ya detectan esta url.
+10. En la url `drupal.docker.localhost` deberás tener disponible Drupal listo para instalar, con el wizard de instalación.
