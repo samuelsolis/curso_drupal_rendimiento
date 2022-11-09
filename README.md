@@ -49,3 +49,4 @@ Toda la documentación sobre este docker-compose y su uso está en https://wodby
 8. Puedes salir del contenedor escribiendo `exit`
 9. Añade a tu fichero de hosts la linea `127.0.0.1 drupal.docker.localhost`. Cambia el dominio si lo has cambiado en el ".env". Este paso puede no ser necesario, algunos navegadores como Chrome ya detectan esta url.
 10. En la url `drupal.docker.localhost` deberás tener disponible Drupal listo para instalar, con el wizard de instalación.
+11. Durante la fase de instalación tendrás que especificar el servidor de base de datos, en este caso el servidor está nombrado como `mariadb` y no `localhost` que es la configuración por defecto.
